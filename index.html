@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Exports | Brazilian Meat Trading & Export</title>
+    <!-- Tailwind CSS для стильного дизайна -->
+    <script src="https://jsdelivr.net"></script>
+    <!-- Иконки -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        .lang-pt { display: none; }
+        :target { scroll-margin-top: 80px; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur shadow-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between mx-auto">
+            <!-- Логотип (заглушка, подставим ваш файл) -->
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-md shadow-amber-500/20">
+                    <i class="fa-solid fa-fox"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black text-gray-900 tracking-tight block">FOX EXPORTS</span>
+                    <span class="text-xs text-amber-600 font-semibold tracking-wider uppercase block -mt-1 lang-en">Meat Trading Pool</span>
+                    <span class="text-xs text-amber-600 font-semibold tracking-wider uppercase block -mt-1 lang-pt">Pool de Exportação</span>
+                </div>
+            </div>
+            
+            <!-- Меню -->
+            <div class="hidden md:flex items-center gap-8 font-medium">
+                <a href="#about" class="text-gray-600 hover:text-amber-500 transition-colors lang-en">About</a>
+                <a href="#about" class="text-gray-600 hover:text-amber-500 transition-colors lang-pt">Sobre</a>
+                
+                <a href="#products" class="text-gray-600 hover:text-amber-500 transition-colors lang-en">Products</a>
+                <a href="#products" class="text-gray-600 hover:text-amber-500 transition-colors lang-pt">Produtos</a>
+                
+                <a href="#prices" class="text-gray-600 hover:text-amber-500 transition-colors lang-en">Offers & Prices</a>
+                <a href="#prices" class="text-gray-600 hover:text-amber-500 transition-colors lang-pt">Ofertas e Preços</a>
+                
+                <a href="#logistics" class="text-gray-600 hover:text-amber-500 transition-colors lang-en">Logistics</a>
+                <a href="#logistics" class="text-gray-600 hover:text-amber-500 transition-colors lang-pt">Logística</a>
+            </div>
+
+            <!-- Переключатель языков -->
+            <div class="flex items-center gap-2 bg-gray-100 p-1 rounded-lg text-xs font-bold">
+                <button onclick="setLang('en')" id="btn-en" class="px-3 py-1.5 rounded-md bg-white shadow-sm text-amber-600 transition-all">EN</button>
+                <button onclick="setLang('pt')" id="btn-pt" class="px-3 py-1.5 rounded-md text-gray-500 hover:text-gray-900 transition-all">PT</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ГЛАВНЫЙ ЭКРАН (HERO) -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-gray-900 via-gray-800 to-amber-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent"></div>
+        <div class="max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 mx-auto">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full text-amber-400 text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-earth-americas"></i> Direct from Brazil
+                </div>
+                
+                <!-- English -->
+                <div class="lang-en">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none mb-6">
+                        Premium Brazilian Meat <br><span class="text-amber-400">Supply Global Trading</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Fox Exports aggregates the production capacities of leading Brazilian meat processing plants. We deliver high-quality boneless beef, poultry, and pork worldwide with complete compliance and certification.
+                    </p>
+                </div>
+                
+                <!-- Portuguese -->
+                <div class="lang-pt">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none mb-6">
+                        Exportação de Carne Brasileira <br><span class="text-amber-400">Para o Mercado Global</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        A Fox Exports consolida a capacidade de produção dos principais frigoríficos brasileiros. Entregamos carne bovina desossada, aves e suínos de alta qualidade para todo o mundo, com conformidade total.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#prices" class="bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold px-8 py-4 rounded-xl shadow-lg shadow-amber-500/20 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        <span class="lang-en">View Current Price List</span>
+                        <span class="lang-pt">Ver Lista de Preços</span>
+                    </a>
+                    <a href="mailto:dmytro@fox-exports.com" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl backdrop-blur transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="lang-en">Contact Trader</span>
+                        <span class="lang-pt">Contato Direto</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О КОМПАНИИ (ABOUT ПУЛ) -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-xs font-bold text-amber-600 uppercase tracking-widest mb-2">Fox Exports Pool</h2>
+                    
+                    <div class="lang-en">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Why Global Buyers Choose Our Producers Pool</h3>
+                        <p class="text-gray-600 mb-4">
+                            Instead of dealing with a single facility, working with Fox Exports gives you access to an aggregated pool of reliable Brazilian manufacturers. This guarantees volume stability even during high seasonal demand.
+                        </p>
+                        <p class="text-gray-600">
+                            We take full responsibility for trade management, quality control at the loading phase, international compliance, and complex multimodal logistics.
+                        </p>
+                    </div>
+                    
+                    <div class="lang-pt">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Por que compradores internacionais escolhem nosso Pool</h3>
+                        <p class="text-gray-600 mb-4">
+                            Em vez de negociar com apenas uma planta, trabalhar com a Fox Exports oferece acesso a um pool consolidado de fabricantes brasileiros confiáveis. Isso garante estabilidade de volume mesmo em picos de demanda.
+                        </p>
+                        <p class="text-gray-600">
+                            Assumimos total responsabilidade pela gestão comercial, controle de qualidade na fase de carregamento, conformidade internacional e logística multimodal.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-4 text-xl"><i class="fa-solid fa-certificate"></i></div>
+                        <h4 class="font-bold text-gray-900 mb-1">Halal Certified</h4>
+                        <p class="text-xs text-gray-500 lang-en">Full compliance for Muslim markets.</p>
+                        <p class="text-xs text-gray-500 lang-pt">Conformidade total para o mercado Halal.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-4 text-xl"><i class="fa-solid fa-cubes"></i></div>
+                        <h4 class="font-bold text-gray-900 mb-1">Industrial & Premium</h4>
+                        <p class="text-xs text-gray-500 lang-en">From manufacturing cuts to elite lines.</p>
+                        <p class="text-xs text-gray-500 lang-pt">Cortes industriais e linhas de elite.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-4 text-xl"><i class="fa-solid fa-shield-halved"></i></div>
